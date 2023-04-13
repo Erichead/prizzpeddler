@@ -5,11 +5,12 @@
         <link href="PrizzStyles.css">
     </head>
     <body>
-        <script src="PrizzPeddler.js"></script>
+        <script src="PrizzCode.js"></script>
 
         <p id="RedVatLevel">You can fill <span id ="Prizz"
             class="number">0</span> bottles!
         </p>
+        <button onclick="BottleFill()" class="fillBottleButton">Fill one up and sell it!</button>
 
         <p id="StarTotal">Star (The currency): <span id = "Star"
             class="number">0</span>
@@ -18,19 +19,33 @@
         <p id="StarRateTotal">You currently make <span id="StarRate"
             class="number">0</span> Star per bottle.
         </p>
-
-    </body>
-    <body>
-        <script src="PrizzPeddler.js"></script>
         <div class="itemMenu">
             <div class="item">
-
+                <div class="buyvatbuttoncontainer">
+                    <button onclick="buyVat()" class="buyVatButton">Buy</button>
+                </div>
+                <div class="containertext">
+                    <p>Current Vat Size: <span id="VatSize">5</span></p>
+                    <p>Current Upgrade Cost: <span id="VatUpgrade">10</span></p>
+                </div>
             </div>
             <div class="item">
-                
+                <div class="buyfillbuttoncontainer">
+                    <button onclick="buyFill()" class="buyFillButton">Buy</button>
+                </div>
+                <div class="containertext">
+                    <p>Current Fill Rate: <span id="FillRate">0.2</span></p>
+                    <p>Current Upgrade Cost: <span id="FillUpgrade">15</span></p>
+                </div>
             </div>
             <div class="item">
-                
+                <div class="buystarbuttoncontainer">
+                    <button onclick="buyStar()" class="buyStarButton">Buy</button>
+                </div>
+                <div class="containertext">
+                    <p>Current Bottle Cost: <span id="StarCost">10</span></p>
+                    <p>Current Upgrade Cost: <span id="FillUpgrade">15</span></p>
+                </div>
             </div>
         </div>
     </body>
